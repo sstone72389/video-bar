@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>video bar testing</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <script src="index.js"></script>
+</head>
+
+<body>
+
+  <center>
+    <p style="font-weight:bold;font-size:24px;font-family:verdana;">Other html in the background you can see while video plays...</p>
+  </center>
+
+  <div id="container">
+
+    <button id="playtxtbtn" onclick="revealVideo('video','youtube')"><div class="play-button">
+</div>
+<span id="playtxt">Play Video</span></button>
+  </div>
+
+  <div id="video" class="lightbox" onclick="hideVideo('video','youtube')">
+    <div class="lightbox-container">
+      <div class="lightbox-content">
+
+        <button onclick="hideVideo('video','youtube')" class="lightbox-close">
+        Close | ✕
+      </button>
+        <div class="video-container">
+          <iframe id="youtube" width="960" height="540" src="https://www.youtube.com/embed/z0wRT8xUNBI?" frameborder="0" allowfullscreen></iframe>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+</body>
+
+</html>
